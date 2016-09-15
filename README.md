@@ -10,6 +10,13 @@ In an endeavor to speed WordPress sites up we decided to move all PHP sessions i
 
 Drop `wpdb-phpsessions.php` into your wp-content/plugins/ or wp-content/mu-plugins/ directory and enjoy.
 
+Edit config to true Line ~ 100
+```
+self::$config = self::maybe_user_config( array(
+			'enable' => true,
+		) );
+```
+
 ## License
 
 wpdb-phpsessions Copyright (c) 2016 Pressjitsu // licensed under the GPLv3 (https://www.gnu.org/licenses/gpl-3.0.txt)
